@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ürünler</h1>
+        <nav>
+            <button onclick="window.location.href='index.html'">Ana Sayfa</button>
+            <button onclick="window.location.href='toptanci.html'">Toptancı</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-form">
+            <h2>Yeni Ürün Ekle</h2>
+            <input type="text" id="new-product-name" placeholder="Ürün Adı">
+            <input type="number" id="new-product-price" placeholder="Fiyat">
+            <input type="number" id="new-product-profit" placeholder="Kar">
+            <input type="number" id="new-product-quantity" placeholder="Miktar">
+            <input type="file" id="new-product-image">
+            <button onclick="addProduct()">Ürün Ekle</button>
+        </section>
+
+        <section id="existing-products">
+            <h2>Mevcut Ürünler</h2>
+            <input type="text" id="search-products" placeholder="Ürün Ara" onkeyup="searchProducts()">
+            <ul id="all-products"></ul>
+        </section>
+    </main>
+
+    <script src="urunler.js"></script>
+</body>
+</html>

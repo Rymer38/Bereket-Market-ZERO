@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ana Sayfa</h1>
+        <nav>
+            <button onclick="window.location.href='urunler.html'">Ürünler</button>
+            <button onclick="window.location.href='toptanci.html'">Toptancı</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sales-categories">
+            <h2>Kategoriler</h2>
+            <div id="cash-sales">
+                <h3>Nakit Satış</h3>
+                <ul id="cash-list"></ul>
+                <p id="cash-total-price">Toplam Fiyat: 0 TL</p>
+                <p id="cash-total-profit">Toplam Kar: 0 TL</p>
+            </div>
+            <div id="card-sales">
+                <h3>Kart Satış</h3>
+                <ul id="card-list"></ul>
+                <p id="card-total-price">Toplam Fiyat: 0 TL</p>
+                <p id="card-total-profit">Toplam Kar: 0 TL</p>
+            </div>
+            <div id="credit-sales">
+                <h3>Veresiye Satış</h3>
+                <ul id="credit-list"></ul>
+                <p id="credit-total-price">Toplam Fiyat: 0 TL</p>
+                <p id="credit-total-profit">Toplam Kar: 0 TL</p>
+            </div>
+        </section>
+
+        <button onclick="saveDay()">Günü Kaydet</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
